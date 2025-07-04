@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sora - AI Tools Hub</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/tool-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="index.html" class="logo glitch-text" data-text="AI Tools Hub">AI Tools Hub</a>
+            </div>
+            
+            <div class="header-controls">
+                <div class="language-selector">
+                    <select id="languageSelect" class="language-select">
+                        <option value="en">🇺🇸 English</option>
+                        <option value="fr">🇫🇷 Français</option>
+                        <option value="ar">🇸🇦 العربية</option>
+                    </select>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Tool Title Section -->
+        <section class="tool-hero">
+            <div class="tool-hero-content">
+                <div class="tool-icon-large">✨</div>
+                <h1 class="tool-title glitch-text" data-text="Sora">Sora</h1>
+                <p class="tool-subtitle" data-i18n="sora.subtitle">
+                    OpenAI's Revolutionary Text-to-Video AI with Stunning Visual Quality
+                </p>
+                <div class="tool-badges">
+                    <span class="badge">High Quality</span>
+                    <span class="badge">Realistic Physics</span>
+                    <span class="badge">Complex Scenes</span>
+                    <span class="badge">Cinematic Quality</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="content-section" id="overview">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.overview">Overview</h2>
+            </div>
+            <div class="section-content">
+                <div class="overview-card">
+                    <p class="overview-text" data-i18n="sora.overview">
+                        Sora is OpenAI's revolutionary text-to-video AI model that creates stunning, high-quality videos from text descriptions. It excels at generating realistic physics, complex scenes, and cinematic-quality content with unprecedented visual fidelity.
+                    </p>
+                    <div class="overview-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🚀</span>
+                            <span class="highlight-text" data-i18n="sora.highlight.revolutionary">Revolutionary AI Model</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">⚡</span>
+                            <span class="highlight-text" data-i18n="sora.highlight.physics">Realistic Physics</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🎬</span>
+                            <span class="highlight-text" data-i18n="sora.highlight.cinematic">Cinematic Quality</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step-by-Step Usage Guide -->
+        <section class="content-section" id="usage">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.usage">Step-by-Step Usage Guide</h2>
+            </div>
+            <div class="section-content">
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3 data-i18n="sora.step1.title">Subscribe to ChatGPT Plus</h3>
+                            <p data-i18n="sora.step1.description">Sign up for ChatGPT Plus, Team, or Enterprise subscription to access Sora through OpenAI's platform.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3 data-i18n="sora.step2.title">Access Sora Platform</h3>
+                            <p data-i18n="sora.step2.description">Navigate to OpenAI's Sora platform and familiarize yourself with the video creation interface.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3 data-i18n="sora.step3.title">Write Detailed Descriptions</h3>
+                            <p data-i18n="sora.step3.description">Create comprehensive scene descriptions including subject, action, setting, and visual style details.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3 data-i18n="sora.step4.title">Choose Style and Settings</h3>
+                            <p data-i18n="sora.step4.description">Select your preferred visual style, quality settings, and generation parameters.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3 data-i18n="sora.step5.title">Generate and Review</h3>
+                            <p data-i18n="sora.step5.description">Generate your video and carefully review the results for quality and accuracy.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <h3 data-i18n="sora.step6.title">Download and Share</h3>
+                            <p data-i18n="sora.step6.description">Download your generated video and share it on your preferred platforms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Features -->
+        <section class="content-section" id="features">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.features">Core Features</h2>
+            </div>
+            <div class="section-content">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎥</div>
+                        <h3 data-i18n="sora.feature.quality.title">High-Quality Output</h3>
+                        <p data-i18n="sora.feature.quality.description">Generate stunning, high-resolution videos with exceptional visual quality and detail.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3 data-i18n="sora.feature.physics.title">Realistic Physics</h3>
+                        <p data-i18n="sora.feature.physics.description">Advanced physics simulation for realistic object movement, interactions, and natural motion.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎭</div>
+                        <h3 data-i18n="sora.feature.scenes.title">Complex Scenes</h3>
+                        <p data-i18n="sora.feature.scenes.description">Handle complex scenes with multiple elements, characters, and dynamic interactions.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎬</div>
+                        <h3 data-i18n="sora.feature.cinematic.title">Cinematic Quality</h3>
+                        <p data-i18n="sora.feature.cinematic.description">Professional-grade cinematic quality with proper lighting, composition, and visual effects.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3 data-i18n="sora.feature.prompt.title">Advanced Prompting</h3>
+                        <p data-i18n="sora.feature.prompt.description">Sophisticated prompt understanding for detailed and accurate scene generation.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3 data-i18n="sora.feature.iteration.title">Iterative Refinement</h3>
+                        <p data-i18n="sora.feature.iteration.description">Refine and improve generated videos through multiple iterations and adjustments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="content-section" id="comparison">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.comparison">Comparison Table</h2>
+            </div>
+            <div class="section-content">
+                <div class="comparison-table-container">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n="comparison.feature">Feature</th>
+                                <th>Sora</th>
+                                <th>Veo 3</th>
+                                <th>Runway ML</th>
+                                <th>Kling AI</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-i18n="comparison.resolution">Max Resolution</td>
+                                <td>1080p</td>
+                                <td class="highlight">4K</td>
+                                <td>4K</td>
+                                <td>1080p</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.audio">Audio Generation</td>
+                                <td>❌</td>
+                                <td class="highlight">✅ Native</td>
+                                <td>✅ Basic</td>
+                                <td>❌</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.duration">Max Duration</td>
+                                <td class="highlight">60 seconds</td>
+                                <td>8 seconds</td>
+                                <td>Unlimited</td>
+                                <td>30 seconds</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.camera">Camera Controls</td>
+                                <td>Basic</td>
+                                <td class="highlight">Advanced</td>
+                                <td>Professional</td>
+                                <td>Limited</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.physics">Physics</td>
+                                <td class="highlight">Realistic</td>
+                                <td class="highlight">Realistic</td>
+                                <td>Basic</td>
+                                <td>Stylized</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.pricing">Pricing</td>
+                                <td>Subscription</td>
+                                <td>Pay-per-use</td>
+                                <td>Subscription</td>
+                                <td>Freemium</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ready-to-Use Prompts -->
+        <section class="content-section" id="prompts">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.prompts">Ready-to-Use Prompts</h2>
+            </div>
+            <div class="section-content">
+                <div class="prompts-grid">
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Sci-fi</span>
+                        </div>
+                        <div class="prompt-text">
+                            "A cyberpunk city at night with neon-lit hovercars flying between skyscrapers, cinematic lighting, rain falling, Blade Runner aesthetic"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Cyberpunk</span>
+                            <span class="tag">Neon</span>
+                            <span class="tag">Futuristic</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Steampunk</span>
+                        </div>
+                        <div class="prompt-text">
+                            "A steampunk inventor tinkering with a brass robot in a cluttered workshop, warm lighting, smoke and steam effects, Victorian aesthetic"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Steampunk</span>
+                            <span class="tag">Workshop</span>
+                            <span class="tag">Victorian</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Cozy</span>
+                        </div>
+                        <div class="prompt-text">
+                            "A cozy cabin in a snowstorm, smoke curling from the chimney, warm light in the windows, peaceful winter atmosphere"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Cozy</span>
+                            <span class="tag">Winter</span>
+                            <span class="tag">Peaceful</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Nature</span>
+                        </div>
+                        <div class="prompt-text">
+                            "A majestic waterfall cascading down a mountain cliff, surrounded by lush green forest, golden hour lighting, mist and spray"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Nature</span>
+                            <span class="tag">Waterfall</span>
+                            <span class="tag">Golden Hour</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Space</span>
+                        </div>
+                        <div class="prompt-text">
+                            "An astronaut floating in zero gravity inside a space station, Earth visible through the windows, weightless objects floating around"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Space</span>
+                            <span class="tag">Zero Gravity</span>
+                            <span class="tag">Space Station</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Action</span>
+                        </div>
+                        <div class="prompt-text">
+                            "A high-speed motorcycle chase through a futuristic city, dynamic camera movements, neon lights, dramatic action sequences"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Action</span>
+                            <span class="tag">Motorcycle</span>
+                            <span class="tag">Dynamic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Limitations & Warnings -->
+        <section class="content-section" id="limitations">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.limitations">Limitations & Warnings</h2>
+            </div>
+            <div class="section-content">
+                <div class="limitations-grid">
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">💳</div>
+                        <h3 data-i18n="sora.limitation.subscription.title">Subscription Required</h3>
+                        <p data-i18n="sora.limitation.subscription.description">Requires ChatGPT Plus, Team, or Enterprise subscription for access, which may be expensive for some users.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">🎵</div>
+                        <h3 data-i18n="sora.limitation.audio.title">No Audio Generation</h3>
+                        <p data-i18n="sora.limitation.audio.description">Sora focuses on video generation without audio, requiring separate audio production for complete content.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">🚫</div>
+                        <h3 data-i18n="sora.limitation.content.title">Content Restrictions</h3>
+                        <p data-i18n="sora.limitation.content.description">Strict content policies limit certain types of scenes, characters, and subject matter.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">⏱️</div>
+                        <h3 data-i18n="sora.limitation.access.title">Limited Access</h3>
+                        <p data-i18n="sora.limitation.access.description">Currently has limited availability and may not be accessible to all users in all regions.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">🎬</div>
+                        <h3 data-i18n="sora.limitation.camera.title">Basic Camera Controls</h3>
+                        <p data-i18n="sora.limitation.camera.description">Limited camera movement controls compared to professional video editing tools.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">🔄</div>
+                        <h3 data-i18n="sora.limitation.consistency.title">Style Consistency</h3>
+                        <p data-i18n="sora.limitation.consistency.description">Maintaining consistent visual style across multiple generations can be challenging.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="content-section" id="faq">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.faq">FAQ</h2>
+            </div>
+            <div class="section-content">
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="sora.faq.q1">How do I access Sora?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="sora.faq.a1">Sora is available to ChatGPT Plus, Team, and Enterprise subscribers through OpenAI's platform.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="sora.faq.q2">What makes Sora different?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="sora.faq.a2">Sora excels at realistic physics simulation and complex scene generation with exceptional visual quality.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="sora.faq.q3">Can Sora generate audio?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="sora.faq.a3">No, Sora focuses on video generation without audio. You'll need to add audio separately.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="sora.faq.q4">What's the maximum video length?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="sora.faq.a4">Sora can generate videos up to 60 seconds in length, which is longer than many other AI video tools.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="sora.faq.q5">Are there content restrictions?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="sora.faq.a5">Yes, Sora has strict content policies that limit certain types of scenes, characters, and subject matter.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="sora.faq.q6">How good is the physics simulation?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="sora.faq.a6">Sora's physics simulation is highly realistic, accurately portraying object movement, interactions, and natural motion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expert Tips -->
+        <section class="content-section" id="tips">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.tips">Expert Tips & Use Cases</h2>
+            </div>
+            <div class="section-content">
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">💡</div>
+                        <h3 data-i18n="sora.tip.prompt.title">Detailed Scene Descriptions</h3>
+                        <p data-i18n="sora.tip.prompt.description">Provide comprehensive descriptions including lighting, atmosphere, and specific details for best results.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">⚡</div>
+                        <h3 data-i18n="sora.tip.physics.title">Leverage Physics</h3>
+                        <p data-i18n="sora.tip.physics.description">Take advantage of Sora's excellent physics simulation for realistic motion and interactions.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🎬</div>
+                        <h3 data-i18n="sora.tip.cinematic.title">Cinematic Quality</h3>
+                        <p data-i18n="sora.tip.cinematic.description">Use cinematic terminology and focus on visual storytelling for professional-looking results.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🔄</div>
+                        <h3 data-i18n="sora.tip.iteration.title">Iterate and Refine</h3>
+                        <p data-i18n="sora.tip.iteration.description">Generate multiple versions and refine your prompts based on what works best.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🎨</div>
+                        <h3 data-i18n="sora.tip.style.title">Style Consistency</h3>
+                        <p data-i18n="sora.tip.style.description">Use consistent terminology and style descriptions across multiple generations.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🎵</div>
+                        <h3 data-i18n="sora.tip.audio.title">Plan for Audio</h3>
+                        <p data-i18n="sora.tip.audio.description">Since Sora doesn't generate audio, plan your video content to work well with separately added sound.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p class="developer-info">
+                    <span data-i18n="footer.developed">Developed by</span>
+                    <a href="mailto:developer@example.com" class="developer-link">Your Name</a>
+                </p>
+                <p class="copyright" data-i18n="footer.copyright">
+                    © 2024 AI Tools Hub. All rights reserved.
+                </p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html" class="footer-link" data-i18n="common.back">Back to Home</a>
+                <a href="https://github.com/yourusername/ai-tools-hub" class="footer-link" target="_blank">
+                    <span data-i18n="footer.github">GitHub</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smart Assistant -->
+    <div class="assistant-container" id="assistantContainer">
+        <div class="assistant-bubble" id="assistantBubble">
+            <div class="assistant-icon">🤖</div>
+        </div>
+        <div class="assistant-panel" id="assistantPanel">
+            <div class="assistant-header">
+                <h3 data-i18n="assistant.title">AI Assistant</h3>
+                <button class="assistant-close" id="assistantClose">×</button>
+            </div>
+            <div class="assistant-messages" id="assistantMessages">
+                <div class="message assistant-message">
+                    <p data-i18n="assistant.welcome">Hello! I'm here to help you learn about Sora. Ask me anything!</p>
+                </div>
+            </div>
+            <div class="assistant-input">
+                <input type="text" id="assistantInput" placeholder="Ask about Sora..." data-i18n-placeholder="assistant.placeholder">
+                <button id="assistantSend">→</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/assistant.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tool-page.js"></script>
+    <script>
+        // Initialize Sora-specific assistant
+        document.addEventListener('DOMContentLoaded', function() {
+            updateAssistantForTool('Sora');
+        });
+    </script>
+</body>
+</html> 

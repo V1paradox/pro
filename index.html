@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Hub - Master the Future of Content Creation</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <h1 class="logo glitch-text" data-text="AI Tools Hub">AI Tools Hub</h1>
+            </div>
+            
+            <div class="header-controls">
+                <div class="language-selector">
+                    <select id="languageSelect" class="language-select">
+                        <option value="en">🇺🇸 English</option>
+                        <option value="fr">🇫🇷 Français</option>
+                        <option value="ar">🇸🇦 العربية</option>
+                    </select>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="main-title glitch-text" data-text="Master AI Content Creation">
+                    Master AI Content Creation
+                </h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">
+                    Discover the most powerful AI tools for video generation, image creation, and multimedia content
+                </p>
+            </div>
+        </section>
+
+        <section class="tools-grid">
+            <div class="tool-card" data-tool="veo3">
+                <div class="card-content">
+                    <div class="tool-icon">🎬</div>
+                    <h2 class="tool-title">Veo 3</h2>
+                    <p class="tool-description" data-i18n="tools.veo3.description">
+                        Google's advanced text-to-video generator with native audio and cinematic controls
+                    </p>
+                    <div class="tool-features">
+                        <span class="feature-tag">4K Resolution</span>
+                        <span class="feature-tag">Native Audio</span>
+                        <span class="feature-tag">Cinematic</span>
+                    </div>
+                    <button class="explore-btn" data-i18n="common.explore">Explore Tool</button>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+
+            <div class="tool-card" data-tool="sora">
+                <div class="card-content">
+                    <div class="tool-icon">✨</div>
+                    <h2 class="tool-title">Sora</h2>
+                    <p class="tool-description" data-i18n="tools.sora.description">
+                        OpenAI's revolutionary text-to-video AI with stunning visual quality and physics
+                    </p>
+                    <div class="tool-features">
+                        <span class="feature-tag">High Quality</span>
+                        <span class="feature-tag">Physics</span>
+                        <span class="feature-tag">Realistic</span>
+                    </div>
+                    <button class="explore-btn" data-i18n="common.explore">Explore Tool</button>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+
+            <div class="tool-card" data-tool="runway">
+                <div class="card-content">
+                    <div class="tool-icon">🎭</div>
+                    <h2 class="tool-title">Runway ML</h2>
+                    <p class="tool-description" data-i18n="tools.runway.description">
+                        Professional video editing and AI-powered creative suite for filmmakers
+                    </p>
+                    <div class="tool-features">
+                        <span class="feature-tag">Professional</span>
+                        <span class="feature-tag">Editing</span>
+                        <span class="feature-tag">Creative</span>
+                    </div>
+                    <button class="explore-btn" data-i18n="common.explore">Explore Tool</button>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+
+            <div class="tool-card" data-tool="kling">
+                <div class="card-content">
+                    <div class="tool-icon">🎨</div>
+                    <h2 class="tool-title">Kling AI</h2>
+                    <p class="tool-description" data-i18n="tools.kling.description">
+                        Advanced AI video generation with unique artistic styles and effects
+                    </p>
+                    <div class="tool-features">
+                        <span class="feature-tag">Artistic</span>
+                        <span class="feature-tag">Unique</span>
+                        <span class="feature-tag">Creative</span>
+                    </div>
+                    <button class="explore-btn" data-i18n="common.explore">Explore Tool</button>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p class="developer-info">
+                    <span data-i18n="footer.developed">Developed by</span>
+                    <a href="mailto:developer@example.com" class="developer-link">Your Name</a>
+                </p>
+                <p class="copyright" data-i18n="footer.copyright">
+                    © 2024 AI Tools Hub. All rights reserved.
+                </p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/yourusername/ai-tools-hub" class="footer-link" target="_blank">
+                    <span data-i18n="footer.github">GitHub</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smart Assistant -->
+    <div class="assistant-container" id="assistantContainer">
+        <div class="assistant-bubble" id="assistantBubble">
+            <div class="assistant-icon">🤖</div>
+        </div>
+        <div class="assistant-panel" id="assistantPanel">
+            <div class="assistant-header">
+                <h3 data-i18n="assistant.title">AI Assistant</h3>
+                <button class="assistant-close" id="assistantClose">×</button>
+            </div>
+            <div class="assistant-messages" id="assistantMessages">
+                <div class="message assistant-message">
+                    <p data-i18n="assistant.welcome">Hello! I'm here to help you learn about AI tools. Ask me anything!</p>
+                </div>
+            </div>
+            <div class="assistant-input">
+                <input type="text" id="assistantInput" placeholder="Ask a question..." data-i18n-placeholder="assistant.placeholder">
+                <button id="assistantSend">→</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/assistant.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kling AI - AI Tools Hub</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/tool-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="index.html" class="logo glitch-text" data-text="AI Tools Hub">AI Tools Hub</a>
+            </div>
+            
+            <div class="header-controls">
+                <div class="language-selector">
+                    <select id="languageSelect" class="language-select">
+                        <option value="en">🇺🇸 English</option>
+                        <option value="fr">🇫🇷 Français</option>
+                        <option value="ar">🇸🇦 العربية</option>
+                    </select>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Tool Title Section -->
+        <section class="tool-hero">
+            <div class="tool-hero-content">
+                <div class="tool-icon-large">🎨</div>
+                <h1 class="tool-title glitch-text" data-text="Kling AI">Kling AI</h1>
+                <p class="tool-subtitle" data-i18n="kling.subtitle">
+                    Advanced AI Video Generation with Unique Artistic Styles and Effects
+                </p>
+                <div class="tool-badges">
+                    <span class="badge">Artistic</span>
+                    <span class="badge">Unique</span>
+                    <span class="badge">Creative</span>
+                    <span class="badge">Stylized</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="content-section" id="overview">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.overview">Overview</h2>
+            </div>
+            <div class="section-content">
+                <div class="overview-card">
+                    <p class="overview-text" data-i18n="kling.overview">
+                        Kling AI is an innovative video generation platform that specializes in unique artistic styles and creative effects. It offers distinctive visual aesthetics and creative tools for content creators looking for artistic and stylized content.
+                    </p>
+                    <div class="overview-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🎨</span>
+                            <span class="highlight-text" data-i18n="kling.highlight.artistic">Artistic Styles</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">✨</span>
+                            <span class="highlight-text" data-i18n="kling.highlight.unique">Unique Effects</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🎭</span>
+                            <span class="highlight-text" data-i18n="kling.highlight.creative">Creative Tools</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step-by-Step Usage Guide -->
+        <section class="content-section" id="usage">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.usage">Step-by-Step Usage Guide</h2>
+            </div>
+            <div class="section-content">
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3 data-i18n="kling.step1.title">Create Account</h3>
+                            <p data-i18n="kling.step1.description">Sign up for a Kling AI account and explore the available artistic styles and features.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3 data-i18n="kling.step2.title">Browse Styles</h3>
+                            <p data-i18n="kling.step2.description">Explore the library of artistic styles and creative effects available in the platform.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3 data-i18n="kling.step3.title">Upload Content</h3>
+                            <p data-i18n="kling.step3.description">Upload your images or describe your desired content for AI processing.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3 data-i18n="kling.step4.title">Apply Effects</h3>
+                            <p data-i18n="kling.step4.description">Select and apply creative effects, filters, and artistic transformations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3 data-i18n="kling.step5.title">Generate Video</h3>
+                            <p data-i18n="kling.step5.description">Generate your artistic video with the selected styles and effects.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <h3 data-i18n="kling.step6.title">Download & Share</h3>
+                            <p data-i18n="kling.step6.description">Download your creative video and share it on your preferred platforms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Features -->
+        <section class="content-section" id="features">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.features">Core Features</h2>
+            </div>
+            <div class="section-content">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3 data-i18n="kling.feature.styles.title">Unique Artistic Styles</h3>
+                        <p data-i18n="kling.feature.styles.description">Access to distinctive artistic styles not found in other AI video tools.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">✨</div>
+                        <h3 data-i18n="kling.feature.effects.title">Creative Effects Library</h3>
+                        <p data-i18n="kling.feature.effects.description">Extensive library of creative effects and visual transformations.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎭</div>
+                        <h3 data-i18n="kling.feature.custom.title">Custom Style Training</h3>
+                        <p data-i18n="kling.feature.custom.description">Train and create your own custom artistic styles and effects.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎥</div>
+                        <h3 data-i18n="kling.feature.quality.title">High-Quality Output</h3>
+                        <p data-i18n="kling.feature.quality.description">Generate high-quality artistic videos with unique visual aesthetics.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3 data-i18n="kling.feature.community.title">Community Features</h3>
+                        <p data-i18n="kling.feature.community.description">Share and discover artistic styles with the Kling AI community.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3 data-i18n="kling.feature.user.title">User-Friendly Interface</h3>
+                        <p data-i18n="kling.feature.user.description">Intuitive interface designed for creative content creation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="content-section" id="comparison">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.comparison">Comparison Table</h2>
+            </div>
+            <div class="section-content">
+                <div class="comparison-table-container">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n="comparison.feature">Feature</th>
+                                <th>Kling AI</th>
+                                <th>Veo 3</th>
+                                <th>Sora</th>
+                                <th>Runway ML</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-i18n="comparison.resolution">Max Resolution</td>
+                                <td>1080p</td>
+                                <td class="highlight">4K</td>
+                                <td>1080p</td>
+                                <td>4K</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.audio">Audio Generation</td>
+                                <td>❌</td>
+                                <td class="highlight">✅ Native</td>
+                                <td>❌</td>
+                                <td>✅ Basic</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.duration">Max Duration</td>
+                                <td>30 seconds</td>
+                                <td>8 seconds</td>
+                                <td class="highlight">60 seconds</td>
+                                <td class="highlight">Unlimited</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.camera">Camera Controls</td>
+                                <td>Limited</td>
+                                <td class="highlight">Advanced</td>
+                                <td>Basic</td>
+                                <td class="highlight">Professional</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.physics">Physics</td>
+                                <td class="highlight">Stylized</td>
+                                <td>Realistic</td>
+                                <td>Realistic</td>
+                                <td>Basic</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.pricing">Pricing</td>
+                                <td class="highlight">Freemium</td>
+                                <td>Pay-per-use</td>
+                                <td>Subscription</td>
+                                <td>Subscription</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ready-to-Use Prompts -->
+        <section class="content-section" id="prompts">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.prompts">Ready-to-Use Prompts</h2>
+            </div>
+            <div class="section-content">
+                <div class="prompts-grid">
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Anime</span>
+                        </div>
+                        <div class="prompt-text">
+                            "Create an anime-style music video with vibrant colors, dynamic character movements, and cel-shaded animation effects"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Anime</span>
+                            <span class="tag">Music Video</span>
+                            <span class="tag">Cel-shaded</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Watercolor</span>
+                        </div>
+                        <div class="prompt-text">
+                            "Generate a watercolor painting animation of a sunset over mountains with flowing brush strokes and soft color transitions"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Watercolor</span>
+                            <span class="tag">Sunset</span>
+                            <span class="tag">Painting</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Cyberpunk</span>
+                        </div>
+                        <div class="prompt-text">
+                            "Design a cyberpunk art piece with neon colors, futuristic elements, and glitch effects for a sci-fi aesthetic"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Cyberpunk</span>
+                            <span class="tag">Neon</span>
+                            <span class="tag">Glitch</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Oil Painting</span>
+                        </div>
+                        <div class="prompt-text">
+                            "Create an oil painting style animation of a medieval castle with rich textures, dramatic lighting, and artistic brushwork"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Oil Painting</span>
+                            <span class="tag">Medieval</span>
+                            <span class="tag">Dramatic</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Pixel Art</span>
+                        </div>
+                        <div class="prompt-text">
+                            "Generate a pixel art animation of a retro video game scene with 8-bit style graphics and nostalgic color palette"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Pixel Art</span>
+                            <span class="tag">Retro</span>
+                            <span class="tag">8-bit</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Abstract</span>
+                        </div>
+                        <div class="prompt-text">
+                            "Create an abstract art animation with flowing geometric shapes, vibrant gradients, and dynamic color morphing"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Abstract</span>
+                            <span class="tag">Geometric</span>
+                            <span class="tag">Dynamic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Limitations & Warnings -->
+        <section class="content-section" id="limitations">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.limitations">Limitations & Warnings</h2>
+            </div>
+            <div class="section-content">
+                <div class="limitations-grid">
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">🎨</div>
+                        <h3 data-i18n="kling.limitation.artistic.title">Artistic Focus Only</h3>
+                        <p data-i18n="kling.limitation.artistic.description">Limited to artistic and creative content, may not suit professional applications.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">🎭</div>
+                        <h3 data-i18n="kling.limitation.style.title">Style Consistency</h3>
+                        <p data-i18n="kling.limitation.style.description">Maintaining consistent style across multiple generations can be challenging.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">⏱️</div>
+                        <h3 data-i18n="kling.limitation.processing.title">Processing Time</h3>
+                        <p data-i18n="kling.limitation.processing.description">Complex artistic effects may require longer processing times.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">📱</div>
+                        <h3 data-i18n="kling.limitation.mobile.title">Mobile Limitations</h3>
+                        <p data-i18n="kling.limitation.mobile.description">Limited mobile functionality compared to desktop experience.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">🎬</div>
+                        <h3 data-i18n="kling.limitation.professional.title">Not for Professional Use</h3>
+                        <p data-i18n="kling.limitation.professional.description">Best suited for creative and artistic projects rather than professional video production.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">🌐</div>
+                        <h3 data-i18n="kling.limitation.availability.title">Limited Availability</h3>
+                        <p data-i18n="kling.limitation.availability.description">May not be available in all regions or have limited access features.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="content-section" id="faq">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.faq">FAQ</h2>
+            </div>
+            <div class="section-content">
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="kling.faq.q1">What makes Kling AI unique?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="kling.faq.a1">Kling AI specializes in artistic styles and creative effects not found in other AI video tools.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="kling.faq.q2">Can I create my own styles?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="kling.faq.a2">Yes, Kling AI allows users to train and create custom artistic styles and effects.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="kling.faq.q3">Is Kling AI good for professional work?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="kling.faq.a3">Kling AI is best suited for creative and artistic projects rather than professional video production.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="kling.faq.q4">What artistic styles are available?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="kling.faq.a4">Kling AI offers various styles including anime, watercolor, oil painting, pixel art, and abstract effects.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="kling.faq.q5">Is there a free version?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="kling.faq.a5">Kling AI offers a freemium model with basic features available for free and premium features for subscribers.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="kling.faq.q6">How long can videos be?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="kling.faq.a6">Kling AI can generate videos up to 30 seconds in length with artistic effects and styles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expert Tips -->
+        <section class="content-section" id="tips">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.tips">Expert Tips & Use Cases</h2>
+            </div>
+            <div class="section-content">
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">🎨</div>
+                        <h3 data-i18n="kling.tip.experiment.title">Experiment with Styles</h3>
+                        <p data-i18n="kling.tip.experiment.description">Try different artistic styles to find the perfect aesthetic for your creative vision.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🎭</div>
+                        <h3 data-i18n="kling.tip.custom.title">Create Custom Styles</h3>
+                        <p data-i18n="kling.tip.custom.description">Train your own custom styles for unique artistic effects and branding.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">👥</div>
+                        <h3 data-i18n="kling.tip.community.title">Join the Community</h3>
+                        <p data-i18n="kling.tip.community.description">Connect with other artists to share styles and discover new creative possibilities.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🎯</div>
+                        <h3 data-i18n="kling.tip.consistency.title">Maintain Consistency</h3>
+                        <p data-i18n="kling.tip.consistency.description">Use consistent style parameters across multiple generations for cohesive results.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">⚡</div>
+                        <h3 data-i18n="kling.tip.optimization.title">Optimize Settings</h3>
+                        <p data-i18n="kling.tip.optimization.description">Adjust quality and processing settings based on your creative needs and time constraints.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🎬</div>
+                        <h3 data-i18n="kling.tip.workflow.title">Creative Workflow</h3>
+                        <p data-i18n="kling.tip.workflow.description">Integrate Kling AI into your creative workflow for artistic content and social media.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p class="developer-info">
+                    <span data-i18n="footer.developed">Developed by</span>
+                    <a href="mailto:developer@example.com" class="developer-link">Your Name</a>
+                </p>
+                <p class="copyright" data-i18n="footer.copyright">
+                    © 2024 AI Tools Hub. All rights reserved.
+                </p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html" class="footer-link" data-i18n="common.back">Back to Home</a>
+                <a href="https://github.com/yourusername/ai-tools-hub" class="footer-link" target="_blank">
+                    <span data-i18n="footer.github">GitHub</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smart Assistant -->
+    <div class="assistant-container" id="assistantContainer">
+        <div class="assistant-bubble" id="assistantBubble">
+            <div class="assistant-icon">🤖</div>
+        </div>
+        <div class="assistant-panel" id="assistantPanel">
+            <div class="assistant-header">
+                <h3 data-i18n="assistant.title">AI Assistant</h3>
+                <button class="assistant-close" id="assistantClose">×</button>
+            </div>
+            <div class="assistant-messages" id="assistantMessages">
+                <div class="message assistant-message">
+                    <p data-i18n="assistant.welcome">Hello! I'm here to help you learn about Kling AI. Ask me anything!</p>
+                </div>
+            </div>
+            <div class="assistant-input">
+                <input type="text" id="assistantInput" placeholder="Ask about Kling AI..." data-i18n-placeholder="assistant.placeholder">
+                <button id="assistantSend">→</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/assistant.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tool-page.js"></script>
+    <script>
+        // Initialize Kling AI-specific assistant
+        document.addEventListener('DOMContentLoaded', function() {
+            updateAssistantForTool('Kling AI');
+        });
+    </script>
+</body>
+</html> 

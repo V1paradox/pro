@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veo 3 - AI Tools Hub</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/tool-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="index.html" class="logo glitch-text" data-text="AI Tools Hub">AI Tools Hub</a>
+            </div>
+            
+            <div class="header-controls">
+                <div class="language-selector">
+                    <select id="languageSelect" class="language-select">
+                        <option value="en">🇺🇸 English</option>
+                        <option value="fr">🇫🇷 Français</option>
+                        <option value="ar">🇸🇦 العربية</option>
+                    </select>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Tool Title Section -->
+        <section class="tool-hero">
+            <div class="tool-hero-content">
+                <div class="tool-icon-large">🎬</div>
+                <h1 class="tool-title glitch-text" data-text="Veo 3">Veo 3</h1>
+                <p class="tool-subtitle" data-i18n="veo3.subtitle">
+                    Google's Advanced Text-to-Video AI with Native Audio Generation
+                </p>
+                <div class="tool-badges">
+                    <span class="badge">4K Resolution</span>
+                    <span class="badge">Native Audio</span>
+                    <span class="badge">Cinematic Controls</span>
+                    <span class="badge">Realistic Physics</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="content-section" id="overview">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.overview">Overview</h2>
+            </div>
+            <div class="section-content">
+                <div class="overview-card">
+                    <p class="overview-text" data-i18n="veo3.overview">
+                        Veo 3 is Google's latest breakthrough in text-to-video generation, offering unprecedented control over cinematic elements and native audio generation. Launched in May 2025, it represents a significant leap forward in AI video creation technology.
+                    </p>
+                    <div class="overview-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🚀</span>
+                            <span class="highlight-text" data-i18n="veo3.highlight.advanced">Most Advanced AI Video Model</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🎵</span>
+                            <span class="highlight-text" data-i18n="veo3.highlight.audio">Native Audio Generation</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🎬</span>
+                            <span class="highlight-text" data-i18n="veo3.highlight.cinematic">Cinematic Camera Controls</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step-by-Step Usage Guide -->
+        <section class="content-section" id="usage">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.usage">Step-by-Step Usage Guide</h2>
+            </div>
+            <div class="section-content">
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3 data-i18n="veo3.step1.title">Create a Google Account</h3>
+                            <p data-i18n="veo3.step1.description">Sign up for a Google account and access Veo 3 through Google's AI platform or Vertex AI.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3 data-i18n="veo3.step2.title">Navigate to Video Creation</h3>
+                            <p data-i18n="veo3.step2.description">Access the video creation interface and familiarize yourself with the dashboard layout.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3 data-i18n="veo3.step3.title">Write Detailed Prompts</h3>
+                            <p data-i18n="veo3.step3.description">Create comprehensive prompts describing your scene, including subject, action, setting, and style.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3 data-i18n="veo3.step4.title">Select Camera Movements</h3>
+                            <p data-i18n="veo3.step4.description">Choose from cinematic camera movements like dolly shots, pan shots, or tracking shots.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3 data-i18n="veo3.step5.title">Generate and Review</h3>
+                            <p data-i18n="veo3.step5.description">Generate your video and review the results. Use remix features to refine elements.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <h3 data-i18n="veo3.step6.title">Export Your Video</h3>
+                            <p data-i18n="veo3.step6.description">Download your video in your preferred format and resolution up to 4K.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Features -->
+        <section class="content-section" id="features">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.features">Core Features</h2>
+            </div>
+            <div class="section-content">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎥</div>
+                        <h3 data-i18n="veo3.feature.resolution.title">4K Resolution</h3>
+                        <p data-i18n="veo3.feature.resolution.description">Generate videos up to 4K resolution for professional-quality output.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎵</div>
+                        <h3 data-i18n="veo3.feature.audio.title">Native Audio</h3>
+                        <p data-i18n="veo3.feature.audio.description">Generate synchronized audio including dialogue, sound effects, and music.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎬</div>
+                        <h3 data-i18n="veo3.feature.camera.title">Cinematic Controls</h3>
+                        <p data-i18n="veo3.feature.camera.description">Control camera movements, angles, and cinematic techniques with precision.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3 data-i18n="veo3.feature.physics.title">Realistic Physics</h3>
+                        <p data-i18n="veo3.feature.physics.description">Advanced physics simulation for realistic object movement and interactions.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3 data-i18n="veo3.feature.prompt.title">Prompt Adherence</h3>
+                        <p data-i18n="veo3.feature.prompt.description">Improved understanding and execution of complex, detailed prompts.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3 data-i18n="veo3.feature.remix.title">Remix Features</h3>
+                        <p data-i18n="veo3.feature.remix.description">Modify and refine generated videos with advanced editing capabilities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="content-section" id="comparison">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.comparison">Comparison Table</h2>
+            </div>
+            <div class="section-content">
+                <div class="comparison-table-container">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n="comparison.feature">Feature</th>
+                                <th>Veo 3</th>
+                                <th>Sora</th>
+                                <th>Runway ML</th>
+                                <th>Kling AI</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-i18n="comparison.resolution">Max Resolution</td>
+                                <td class="highlight">4K</td>
+                                <td>1080p</td>
+                                <td>4K</td>
+                                <td>1080p</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.audio">Audio Generation</td>
+                                <td class="highlight">✅ Native</td>
+                                <td>❌</td>
+                                <td>✅ Basic</td>
+                                <td>❌</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.duration">Max Duration</td>
+                                <td>8 seconds</td>
+                                <td class="highlight">60 seconds</td>
+                                <td>Unlimited</td>
+                                <td>30 seconds</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.camera">Camera Controls</td>
+                                <td class="highlight">Advanced</td>
+                                <td>Basic</td>
+                                <td>Professional</td>
+                                <td>Limited</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.physics">Physics</td>
+                                <td class="highlight">Realistic</td>
+                                <td class="highlight">Realistic</td>
+                                <td>Basic</td>
+                                <td>Stylized</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.pricing">Pricing</td>
+                                <td>Pay-per-use</td>
+                                <td>Subscription</td>
+                                <td>Subscription</td>
+                                <td>Freemium</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ready-to-Use Prompts -->
+        <section class="content-section" id="prompts">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.prompts">Ready-to-Use Prompts</h2>
+            </div>
+            <div class="section-content">
+                <div class="prompts-grid">
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Cinematic</span>
+                        </div>
+                        <div class="prompt-text">
+                            "A futuristic Tokyo street with holographic ads, filmed in Blade Runner style with neon lighting and rain, dolly shot moving through the scene"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Sci-fi</span>
+                            <span class="tag">Neon</span>
+                            <span class="tag">Dolly Shot</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Nature</span>
+                        </div>
+                        <div class="prompt-text">
+                            "A time-lapse of a sunflower growing from seed to bloom, golden hour lighting, cinematic camera movement, close-up detail shots"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Time-lapse</span>
+                            <span class="tag">Nature</span>
+                            <span class="tag">Close-up</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Space</span>
+                        </div>
+                        <div class="prompt-text">
+                            "An astronaut's POV floating in zero gravity, Earth visible through the spacesuit visor, slow motion, realistic physics simulation"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Space</span>
+                            <span class="tag">POV</span>
+                            <span class="tag">Slow Motion</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Artistic</span>
+                        </div>
+                        <div class="prompt-text">
+                            "A steampunk inventor tinkering with a brass robot in a cluttered workshop, warm lighting, tracking shot following the inventor"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Steampunk</span>
+                            <span class="tag">Workshop</span>
+                            <span class="tag">Tracking</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Cozy</span>
+                        </div>
+                        <div class="prompt-text">
+                            "A cozy cabin in a snowstorm, smoke curling from the chimney, warm light in the windows, static wide shot with subtle camera movement"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Cozy</span>
+                            <span class="tag">Winter</span>
+                            <span class="tag">Wide Shot</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Action</span>
+                        </div>
+                        <div class="prompt-text">
+                            "A cyberpunk motorcycle chase through neon-lit city streets, dynamic camera movements, high-speed action, dramatic lighting"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Action</span>
+                            <span class="tag">Cyberpunk</span>
+                            <span class="tag">Dynamic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Limitations & Warnings -->
+        <section class="content-section" id="limitations">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.limitations">Limitations & Warnings</h2>
+            </div>
+            <div class="section-content">
+                <div class="limitations-grid">
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">⏱️</div>
+                        <h3 data-i18n="veo3.limitation.duration.title">8-Second Limit</h3>
+                        <p data-i18n="veo3.limitation.duration.description">Videos are limited to 8 seconds maximum duration, which may not be suitable for longer content.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">📝</div>
+                        <h3 data-i18n="veo3.limitation.prompt.title">Detailed Prompting Required</h3>
+                        <p data-i18n="veo3.limitation.prompt.description">Best results require comprehensive, detailed prompts with specific instructions.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">🌐</div>
+                        <h3 data-i18n="veo3.limitation.language.title">Language Restrictions</h3>
+                        <p data-i18n="veo3.limitation.language.description">Currently optimized for English language prompts, with limited support for other languages.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">👥</div>
+                        <h3 data-i18n="veo3.limitation.collaboration.title">No Real-Time Collaboration</h3>
+                        <p data-i18n="veo3.limitation.collaboration.description">Limited collaborative features compared to professional video editing platforms.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">💰</div>
+                        <h3 data-i18n="veo3.limitation.cost.title">Usage Costs</h3>
+                        <p data-i18n="veo3.limitation.cost.description">Pay-per-use pricing model may become expensive for high-volume usage.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">🎭</div>
+                        <h3 data-i18n="veo3.limitation.style.title">Style Consistency</h3>
+                        <p data-i18n="veo3.limitation.style.description">Maintaining consistent style across multiple generations can be challenging.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="content-section" id="faq">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.faq">FAQ</h2>
+            </div>
+            <div class="section-content">
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="veo3.faq.q1">How long can Veo 3 videos be?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="veo3.faq.a1">Veo 3 currently supports up to 8-second video clips. This limitation is designed to ensure high quality and consistent results.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="veo3.faq.q2">Does Veo 3 generate audio?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="veo3.faq.a2">Yes, Veo 3 includes native audio generation with dialogue, sound effects, and music that synchronizes with the video content.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="veo3.faq.q3">What resolution does Veo 3 support?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="veo3.faq.a3">Veo 3 can generate videos up to 4K resolution, making it suitable for professional content creation and high-quality output.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="veo3.faq.q4">How do I control camera movements?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="veo3.faq.a4">Include specific camera movement terms in your prompts, such as 'dolly shot', 'pan left', 'tracking shot', or 'crane shot' to control camera behavior.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="veo3.faq.q5">Can I edit generated videos?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="veo3.faq.a5">Yes, Veo 3 offers remix features that allow you to modify and refine generated videos with various editing capabilities.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="veo3.faq.q6">What makes Veo 3 different from other AI video tools?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="veo3.faq.a6">Veo 3 stands out with its native audio generation, advanced cinematic controls, realistic physics simulation, and 4K resolution output capabilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expert Tips -->
+        <section class="content-section" id="tips">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.tips">Expert Tips & Use Cases</h2>
+            </div>
+            <div class="section-content">
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">💡</div>
+                        <h3 data-i18n="veo3.tip.prompt.title">Master Prompt Engineering</h3>
+                        <p data-i18n="veo3.tip.prompt.description">Structure your prompts like a film script: include subject, action, setting, style, and camera directions for best results.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🎬</div>
+                        <h3 data-i18n="veo3.tip.camera.title">Use Cinematic Language</h3>
+                        <p data-i18n="veo3.tip.camera.description">Employ professional film terminology like 'dolly in', 'pan shot', 'tracking', and 'crane shot' for precise camera control.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🎵</div>
+                        <h3 data-i18n="veo3.tip.audio.title">Leverage Audio Generation</h3>
+                        <p data-i18n="veo3.tip.audio.description">Describe desired audio elements in your prompts to get synchronized sound effects, music, and dialogue.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🔄</div>
+                        <h3 data-i18n="veo3.tip.iteration.title">Iterate and Refine</h3>
+                        <p data-i18n="veo3.tip.iteration.description">Use the remix feature to refine elements that work well while changing aspects that don't meet your vision.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🎨</div>
+                        <h3 data-i18n="veo3.tip.style.title">Maintain Style Consistency</h3>
+                        <p data-i18n="veo3.tip.style.description">Use consistent terminology and style descriptions across multiple generations for cohesive results.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">⚡</div>
+                        <h3 data-i18n="veo3.tip.workflow.title">Optimize Your Workflow</h3>
+                        <p data-i18n="veo3.tip.workflow.description">Create storyboards first, then generate individual scenes and combine them in post-production for longer content.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p class="developer-info">
+                    <span data-i18n="footer.developed">Developed by</span>
+                    <a href="mailto:developer@example.com" class="developer-link">Your Name</a>
+                </p>
+                <p class="copyright" data-i18n="footer.copyright">
+                    © 2024 AI Tools Hub. All rights reserved.
+                </p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html" class="footer-link" data-i18n="common.back">Back to Home</a>
+                <a href="https://github.com/yourusername/ai-tools-hub" class="footer-link" target="_blank">
+                    <span data-i18n="footer.github">GitHub</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smart Assistant -->
+    <div class="assistant-container" id="assistantContainer">
+        <div class="assistant-bubble" id="assistantBubble">
+            <div class="assistant-icon">🤖</div>
+        </div>
+        <div class="assistant-panel" id="assistantPanel">
+            <div class="assistant-header">
+                <h3 data-i18n="assistant.title">AI Assistant</h3>
+                <button class="assistant-close" id="assistantClose">×</button>
+            </div>
+            <div class="assistant-messages" id="assistantMessages">
+                <div class="message assistant-message">
+                    <p data-i18n="assistant.welcome">Hello! I'm here to help you learn about Veo 3. Ask me anything!</p>
+                </div>
+            </div>
+            <div class="assistant-input">
+                <input type="text" id="assistantInput" placeholder="Ask about Veo 3..." data-i18n-placeholder="assistant.placeholder">
+                <button id="assistantSend">→</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/assistant.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tool-page.js"></script>
+</body>
+</html> 

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runway ML - AI Tools Hub</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/tool-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="index.html" class="logo glitch-text" data-text="AI Tools Hub">AI Tools Hub</a>
+            </div>
+            
+            <div class="header-controls">
+                <div class="language-selector">
+                    <select id="languageSelect" class="language-select">
+                        <option value="en">🇺🇸 English</option>
+                        <option value="fr">🇫🇷 Français</option>
+                        <option value="ar">🇸🇦 العربية</option>
+                    </select>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Tool Title Section -->
+        <section class="tool-hero">
+            <div class="tool-hero-content">
+                <div class="tool-icon-large">🎭</div>
+                <h1 class="tool-title glitch-text" data-text="Runway ML">Runway ML</h1>
+                <p class="tool-subtitle" data-i18n="runway.subtitle">
+                    Professional Video Editing and AI-Powered Creative Suite for Filmmakers
+                </p>
+                <div class="tool-badges">
+                    <span class="badge">Professional</span>
+                    <span class="badge">AI Effects</span>
+                    <span class="badge">Collaboration</span>
+                    <span class="badge">Advanced Tools</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="content-section" id="overview">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.overview">Overview</h2>
+            </div>
+            <div class="section-content">
+                <div class="overview-card">
+                    <p class="overview-text" data-i18n="runway.overview">
+                        Runway ML is a professional-grade AI-powered creative suite designed for filmmakers, artists, and content creators. It offers advanced video editing tools combined with cutting-edge AI capabilities for seamless creative workflows.
+                    </p>
+                    <div class="overview-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🎬</span>
+                            <span class="highlight-text" data-i18n="runway.highlight.professional">Professional Editing</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🤖</span>
+                            <span class="highlight-text" data-i18n="runway.highlight.ai">AI-Powered Effects</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">👥</span>
+                            <span class="highlight-text" data-i18n="runway.highlight.collaboration">Team Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step-by-Step Usage Guide -->
+        <section class="content-section" id="usage">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.usage">Step-by-Step Usage Guide</h2>
+            </div>
+            <div class="section-content">
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3 data-i18n="runway.step1.title">Create Account</h3>
+                            <p data-i18n="runway.step1.description">Sign up for a Runway ML account and choose your subscription plan based on your needs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3 data-i18n="runway.step2.title">Start New Project</h3>
+                            <p data-i18n="runway.step2.description">Create a new project and select your preferred settings and project type.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3 data-i18n="runway.step3.title">Import Media</h3>
+                            <p data-i18n="runway.step3.description">Upload your video footage, images, and other media assets to your project timeline.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3 data-i18n="runway.step4.title">Apply AI Effects</h3>
+                            <p data-i18n="runway.step4.description">Use AI-powered effects, filters, and tools to enhance your content.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3 data-i18n="runway.step5.title">Collaborate</h3>
+                            <p data-i18n="runway.step5.description">Invite team members to collaborate on your project in real-time.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <h3 data-i18n="runway.step6.title">Export Project</h3>
+                            <p data-i18n="runway.step6.description">Export your final project in your preferred format and quality settings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Features -->
+        <section class="content-section" id="features">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.features">Core Features</h2>
+            </div>
+            <div class="section-content">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">✂️</div>
+                        <h3 data-i18n="runway.feature.editing.title">Professional Editing</h3>
+                        <p data-i18n="runway.feature.editing.description">Advanced video editing tools with timeline, effects, and professional-grade features.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <h3 data-i18n="runway.feature.ai.title">AI-Powered Effects</h3>
+                        <p data-i18n="runway.feature.ai.description">Cutting-edge AI effects for background removal, object tracking, and visual enhancements.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3 data-i18n="runway.feature.motion.title">Motion Graphics</h3>
+                        <p data-i18n="runway.feature.motion.description">Create stunning motion graphics and animated elements with built-in tools.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3 data-i18n="runway.feature.collaboration.title">Real-Time Collaboration</h3>
+                        <p data-i18n="runway.feature.collaboration.description">Work with team members simultaneously on the same project.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎵</div>
+                        <h3 data-i18n="runway.feature.audio.title">Audio Tools</h3>
+                        <p data-i18n="runway.feature.audio.description">Professional audio editing and mixing capabilities with AI enhancement.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">☁️</div>
+                        <h3 data-i18n="runway.feature.cloud.title">Cloud-Based</h3>
+                        <p data-i18n="runway.feature.cloud.description">Cloud-based platform for easy access and collaboration from anywhere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="content-section" id="comparison">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.comparison">Comparison Table</h2>
+            </div>
+            <div class="section-content">
+                <div class="comparison-table-container">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n="comparison.feature">Feature</th>
+                                <th>Runway ML</th>
+                                <th>Veo 3</th>
+                                <th>Sora</th>
+                                <th>Kling AI</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-i18n="comparison.resolution">Max Resolution</td>
+                                <td class="highlight">4K</td>
+                                <td>4K</td>
+                                <td>1080p</td>
+                                <td>1080p</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.audio">Audio Generation</td>
+                                <td class="highlight">✅ Basic</td>
+                                <td>✅ Native</td>
+                                <td>❌</td>
+                                <td>❌</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.duration">Max Duration</td>
+                                <td class="highlight">Unlimited</td>
+                                <td>8 seconds</td>
+                                <td>60 seconds</td>
+                                <td>30 seconds</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.camera">Camera Controls</td>
+                                <td class="highlight">Professional</td>
+                                <td>Advanced</td>
+                                <td>Basic</td>
+                                <td>Limited</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.physics">Physics</td>
+                                <td>Basic</td>
+                                <td class="highlight">Realistic</td>
+                                <td class="highlight">Realistic</td>
+                                <td>Stylized</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="comparison.pricing">Pricing</td>
+                                <td>Subscription</td>
+                                <td>Pay-per-use</td>
+                                <td>Subscription</td>
+                                <td>Freemium</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ready-to-Use Prompts -->
+        <section class="content-section" id="prompts">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.prompts">Ready-to-Use Prompts</h2>
+            </div>
+            <div class="section-content">
+                <div class="prompts-grid">
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Commercial</span>
+                        </div>
+                        <div class="prompt-text">
+                            "Create a professional product commercial with smooth camera movements, dynamic lighting, and cinematic transitions"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Commercial</span>
+                            <span class="tag">Professional</span>
+                            <span class="tag">Cinematic</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Sci-fi</span>
+                        </div>
+                        <div class="prompt-text">
+                            "Generate a sci-fi movie scene with advanced visual effects, atmospheric lighting, and futuristic elements"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Sci-fi</span>
+                            <span class="tag">VFX</span>
+                            <span class="tag">Futuristic</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Animation</span>
+                        </div>
+                        <div class="prompt-text">
+                            "Design an animated logo reveal with particle effects, smooth transitions, and dynamic motion graphics"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Animation</span>
+                            <span class="tag">Logo</span>
+                            <span class="tag">Motion Graphics</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Documentary</span>
+                        </div>
+                        <div class="prompt-text">
+                            "Create a documentary-style sequence with natural lighting, handheld camera movements, and authentic atmosphere"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Documentary</span>
+                            <span class="tag">Natural</span>
+                            <span class="tag">Authentic</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Music Video</span>
+                        </div>
+                        <div class="prompt-text">
+                            "Generate a music video with artistic visuals, synchronized effects, and creative color grading"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Music Video</span>
+                            <span class="tag">Artistic</span>
+                            <span class="tag">Creative</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prompt-card">
+                        <div class="prompt-header">
+                            <span class="prompt-category">Corporate</span>
+                        </div>
+                        <div class="prompt-text">
+                            "Create a corporate presentation video with clean graphics, professional transitions, and modern design elements"
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Corporate</span>
+                            <span class="tag">Professional</span>
+                            <span class="tag">Modern</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Limitations & Warnings -->
+        <section class="content-section" id="limitations">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.limitations">Limitations & Warnings</h2>
+            </div>
+            <div class="section-content">
+                <div class="limitations-grid">
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">📚</div>
+                        <h3 data-i18n="runway.limitation.learning.title">Learning Curve</h3>
+                        <p data-i18n="runway.limitation.learning.description">Steep learning curve for beginners, requiring time to master professional features.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">💻</div>
+                        <h3 data-i18n="runway.limitation.hardware.title">Hardware Requirements</h3>
+                        <p data-i18n="runway.limitation.hardware.description">Requires powerful hardware and good internet connection for optimal performance.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">💰</div>
+                        <h3 data-i18n="runway.limitation.pricing.title">Subscription Pricing</h3>
+                        <p data-i18n="runway.limitation.pricing.description">Subscription-based pricing may be expensive for individual creators or small teams.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">🌐</div>
+                        <h3 data-i18n="runway.limitation.internet.title">Internet Dependency</h3>
+                        <p data-i18n="runway.limitation.internet.description">Cloud-based platform requires stable internet connection for full functionality.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">🎬</div>
+                        <h3 data-i18n="runway.limitation.generation.title">Limited AI Generation</h3>
+                        <p data-i18n="runway.limitation.generation.description">Focuses on editing rather than AI video generation from scratch.</p>
+                    </div>
+                    
+                    <div class="limitation-card warning">
+                        <div class="limitation-icon">📱</div>
+                        <h3 data-i18n="runway.limitation.mobile.title">Mobile Limitations</h3>
+                        <p data-i18n="runway.limitation.mobile.description">Limited mobile functionality compared to desktop experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="content-section" id="faq">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.faq">FAQ</h2>
+            </div>
+            <div class="section-content">
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="runway.faq.q1">Is Runway ML suitable for beginners?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="runway.faq.a1">Runway ML has a learning curve but offers tutorials and templates for beginners to get started.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="runway.faq.q2">What hardware do I need?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="runway.faq.a2">Runway ML works best with a modern computer and good internet connection for cloud-based processing.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="runway.faq.q3">Can I collaborate with others?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="runway.faq.a3">Yes, Runway ML offers collaborative features for team projects with real-time editing capabilities.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="runway.faq.q4">What file formats are supported?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="runway.faq.a4">Runway ML supports most common video, audio, and image formats including MP4, MOV, AVI, and more.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="runway.faq.q5">Is there a free version?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="runway.faq.a5">Runway ML offers a free trial, but full features require a subscription plan.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="runway.faq.q6">How does AI integration work?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="runway.faq.a6">AI features are integrated throughout the platform for effects, background removal, object tracking, and more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expert Tips -->
+        <section class="content-section" id="tips">
+            <div class="section-header">
+                <h2 class="section-title ripple-text" data-i18n="tool.tips">Expert Tips & Use Cases</h2>
+            </div>
+            <div class="section-content">
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">🎓</div>
+                        <h3 data-i18n="runway.tip.learning.title">Start with Tutorials</h3>
+                        <p data-i18n="runway.tip.learning.description">Begin with Runway ML's built-in tutorials to understand the interface and basic features.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🤖</div>
+                        <h3 data-i18n="runway.tip.ai.title">Master AI Tools</h3>
+                        <p data-i18n="runway.tip.ai.description">Learn to use AI-powered features for background removal, object tracking, and effects.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">👥</div>
+                        <h3 data-i18n="runway.tip.collaboration.title">Leverage Collaboration</h3>
+                        <p data-i18n="runway.tip.collaboration.description">Use real-time collaboration features for team projects and faster workflow.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">🎨</div>
+                        <h3 data-i18n="runway.tip.templates.title">Use Templates</h3>
+                        <p data-i18n="runway.tip.templates.description">Start with templates and customize them to speed up your workflow.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">☁️</div>
+                        <h3 data-i18n="runway.tip.cloud.title">Cloud Workflow</h3>
+                        <p data-i18n="runway.tip.cloud.description">Take advantage of cloud-based processing for complex effects and rendering.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">⚡</div>
+                        <h3 data-i18n="runway.tip.performance.title">Optimize Performance</h3>
+                        <p data-i18n="runway.tip.performance.description">Use proxy files and optimize settings for better performance on your hardware.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p class="developer-info">
+                    <span data-i18n="footer.developed">Developed by</span>
+                    <a href="mailto:developer@example.com" class="developer-link">Your Name</a>
+                </p>
+                <p class="copyright" data-i18n="footer.copyright">
+                    © 2024 AI Tools Hub. All rights reserved.
+                </p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html" class="footer-link" data-i18n="common.back">Back to Home</a>
+                <a href="https://github.com/yourusername/ai-tools-hub" class="footer-link" target="_blank">
+                    <span data-i18n="footer.github">GitHub</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smart Assistant -->
+    <div class="assistant-container" id="assistantContainer">
+        <div class="assistant-bubble" id="assistantBubble">
+            <div class="assistant-icon">🤖</div>
+        </div>
+        <div class="assistant-panel" id="assistantPanel">
+            <div class="assistant-header">
+                <h3 data-i18n="assistant.title">AI Assistant</h3>
+                <button class="assistant-close" id="assistantClose">×</button>
+            </div>
+            <div class="assistant-messages" id="assistantMessages">
+                <div class="message assistant-message">
+                    <p data-i18n="assistant.welcome">Hello! I'm here to help you learn about Runway ML. Ask me anything!</p>
+                </div>
+            </div>
+            <div class="assistant-input">
+                <input type="text" id="assistantInput" placeholder="Ask about Runway ML..." data-i18n-placeholder="assistant.placeholder">
+                <button id="assistantSend">→</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/assistant.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tool-page.js"></script>
+    <script>
+        // Initialize Runway ML-specific assistant
+        document.addEventListener('DOMContentLoaded', function() {
+            updateAssistantForTool('Runway ML');
+        });
+    </script>
+</body>
+</html> 
